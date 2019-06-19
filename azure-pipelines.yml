@@ -147,11 +147,6 @@ stages:
       vmImage: 'ubuntu-16.04'
     steps:
     - task: PublishBuildArtifacts@1
-												
-			 
-								
-							   
-								   
       displayName: 'Publish Artifact: ARM templates'
       inputs:
         PathtoPublish: AzureResourceGroupDeployment
@@ -190,32 +185,6 @@ stages:
     - task: CmdLine@2
       inputs:
         script: 'ls'
-						 
-							  
-						 
-															   
-																									 
-						  
-
-					   
-			 
-																	
-						 
-							  
-						 
-															   
-																									 
-						  
-
-					   
-			 
-																	
-						  
-							  
-						 
-															   
-																									 
-						  
 
     - task: AzureResourceGroupDeployment@2
       displayName: Validate ARM template
